@@ -1,0 +1,26 @@
+<table *ngIf="isAnyBook()" class="table table-bordered-md" style="overflow-x:auto;">
+    <thead>
+        <tr style="text-align: center">
+            <th style=" padding-bottom: 1.5%;">UserName</th>
+            <th>Number of Pages Requested</th>
+            <th>Date of Request</th>
+            <th>Confirm Request</th>
+            <th>Decline Request</th>
+
+        </tr>
+    </thead>
+    <tbody *ngFor="let book of chequeBookList">
+        <tr style="text-align: center">
+            <td>{{book.username}}</td>
+            <td>{{book.pages}}</td>
+            <td>{{book.date}}</td>
+            <td><button class="btn btn-success" (click)="confirm(book.username)">Confirm</button></td>
+            <td><button class="btn btn-success" (click)="decline(book.username)">Decline</button></td>
+
+        </tr>
+
+
+    </tbody>
+</table>
+
+<h2 *ngIf="!isAnyBook()" class="text-info">There is no Cheque Book Request.</h2>

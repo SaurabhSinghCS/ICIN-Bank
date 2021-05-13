@@ -1,0 +1,37 @@
+<table *ngIf="isUsersDeactivated()" class="table table-bordered-md" style="overflow-x:auto;">
+    <thead>
+        <tr style="text-align: center">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th style=" padding-bottom: 1.5%;">UserName</th>
+            <th>DOB</th>
+            <th>Account Number</th>
+            <th>Enable Account</th>
+            <th style=" padding-bottom: 1.5%;">Features Granted to the User</th>
+
+        </tr>
+    </thead>
+    <tbody *ngFor="let users of user">
+        <tr style="text-align: center" *ngIf="users.blocked">
+            <td>{{users.first_name}}</td>
+            <td>{{users.last_name}}</td>
+            <td>{{users.user_name}}</td>
+            <td>{{users.dob}}</td>
+            <td>{{users.accno}}</td>
+            <td><button class="btn btn-success" (click)="enable(users.id)">Enable</button></td>
+            <td>
+                <div *ngIf="!users.transfer_access">
+                    Deposit + Withdraw Access
+                </div>
+                <div *ngIf="users.transfer_access">
+                    Deposit + Withdraw + Transfer Access
+                </div>
+            </td>
+
+        </tr>
+
+
+    </tbody>
+</table>
+
+<h2 *ngIf="!isUsersDeactivated()" class="text-info">Sorry there is no Blocked amount</h2>

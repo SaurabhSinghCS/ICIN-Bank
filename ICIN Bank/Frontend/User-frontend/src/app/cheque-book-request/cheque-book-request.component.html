@@ -1,0 +1,35 @@
+<div class="container col-xs-4">
+  <div *ngIf="alreadyRequested">
+    <div class="alert text-danger">Cheque Book is already requested please wait for approval</div>
+  </div>
+
+  <div *ngIf="!alreadyRequested">
+    <h3 style="text-align: center;">Request Cheque Book</h3>
+    <div class="form-group">
+      <div style="text-align: center;" class="form-group">
+        <label>Account Number :&nbsp;</label> <label>{{authService.user.accno}}</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>ChequeBook pages</label>
+      <br>
+      <div *ngIf="pageError">
+        <h2 class="text-danger">Select Pages you Want in Cheque Book</h2>
+        <br/>
+      </div>
+      <select [(ngModel)]="page" class="form-control" name="page">
+        <option *ngFor="let p of pages" [value]='p.value'>
+          {{p.name}}
+        </option>
+      </select>
+      <br>
+      <button (click)="request()" class="btn btn-info form-control"><span class="spinner-border-sm mr-1"></span>Request
+        Chequebook</button>
+      <br>
+    </div>
+  </div>
+
+  <br/>
+  <app-cheque-book-history></app-cheque-book-history>
+</div>

@@ -1,0 +1,26 @@
+<table *ngIf="isAnyTransferRequest()" class="table table-bordered-md" style="overflow-x:auto;">
+    <thead>
+        <tr style="text-align: center">
+            <th>S.No.</th>
+            <th style=" padding-bottom: 1.5%;">UserName</th>
+            <th>Account Number</th>
+            <th>Confirm Request</th>
+            <th>Decline Request</th>
+
+        </tr>
+    </thead>
+    <tbody *ngFor="let transfer of transferRequestList;let index=index">
+        <tr style="text-align: center">
+            <td>{{index+1}}</td>
+            <td>{{transfer.username}}</td>
+            <td>{{transfer.accno}}</td>
+            <td><button class="btn btn-success" (click)="confirm(transfer.username)">Confirm</button></td>
+            <td><button class="btn btn-success" (click)="decline(transfer.username)">Decline</button></td>
+
+        </tr>
+
+
+    </tbody>
+</table>
+
+<h2 *ngIf="!isAnyTransferRequest()" class="text-info">There is no Transfer Request Request.</h2>

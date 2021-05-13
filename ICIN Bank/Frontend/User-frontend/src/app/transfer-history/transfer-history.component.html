@@ -1,0 +1,43 @@
+<div>
+    <h3 style="text-align: center;">Transfer between Accounts History</h3>
+<br>
+
+  <h4 style="padding-left: 1rem;">Type of account: Saving </h4><br>
+  <h4 style="padding-left: 1rem;">Saving balance : {{user.samount}} </h4><br>
+  <h4 style="padding-left: 1rem;">Primary balance : {{user.pamount}} </h4><br>
+  <h4 style="padding-left: 1rem;">Account number :{{user.accno}} </h4><br>
+
+  <div *ngIf="transferList.length !== 0">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align: center;">Date</th>
+      <th style="text-align: center;">Transfer Id</th>
+      <th style="text-align: center;">Sender Account</th>
+      <th style="text-align: center;">Reciever Account</th>
+      <th style="text-align: center;">Amount </th>
+      <th style="text-align: center;">Details </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transfer of transferList">
+      <td  style="text-align: center;">{{transfer.date}}</td>
+      <td  style="text-align: center;">{{transfer.id}}</td>
+      <td  style="text-align: center;">{{transfer.saccount}}</td>
+      <td  style="text-align: center;">{{transfer.raccount}}</td>
+      <td  style="text-align: center;">{{transfer.amount}}</td>
+      <td  style="text-align: center;"><div *ngIf="transfer.saccount === transfer.raccount" class="text-info">Self</div>
+        <div *ngIf="!(transfer.saccount === transfer.raccount) && transfer.saccount === user.accno" class="text-danger">Send</div>
+        <div *ngIf="!(transfer.saccount === transfer.raccount) && transfer.raccount === user.accno" class="text-success">Received</div></td>
+     
+    </tr>
+
+      
+  </tbody>
+</table>
+</div>
+<div *ngIf="transferList.length === 0">
+    <h2 align="center" class="text-info">No transfer is done yet</h2>
+</div>
+
+</div>

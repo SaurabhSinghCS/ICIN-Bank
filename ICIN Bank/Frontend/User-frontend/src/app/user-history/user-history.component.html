@@ -1,0 +1,36 @@
+<div>
+    <h3 style="text-align: center;">Transaction History</h3>
+<br>
+
+  <h4 style="padding-left: 1rem;">Type of account: Saving </h4><br>
+  <h4 style="padding-left: 1rem;">Saving balance : {{user.samount}} </h4><br>
+  <h4 style="padding-left: 1rem;">Account number :{{user.accno}} </h4><br>
+
+  <div *ngIf="transactionList.length !== 0">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align: center;">Date</th>
+      <th style="text-align: center;">Transaction Id</th>
+      <th style="text-align: center;">Action Type</th>
+      <th style="text-align: center;">Amount </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactionList">
+      <td  style="text-align: center;">{{transaction.date}}</td>
+      <td  style="text-align: center;">{{transaction.id}}</td>
+      <td  style="text-align: center;">{{transaction.transactiontype}}</td>
+      <td  style="text-align: center;">{{transaction.amount}}</td>
+     
+    </tr>
+
+      
+  </tbody>
+</table>
+</div>
+<div *ngIf="transactionList.length === 0">
+    <h2 align="center" class="text-info">No transaction is done yet</h2>
+</div>
+
+</div>

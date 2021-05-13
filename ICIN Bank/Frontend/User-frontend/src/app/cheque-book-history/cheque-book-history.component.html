@@ -1,0 +1,25 @@
+<table *ngIf="isAnyBook()" class="table table-bordered-md" style="overflow-x:auto;">
+    <thead>
+        <tr style="text-align: center">
+            <th style=" padding-bottom: 1.5%;">S.No.</th>
+            <th>Number of Pages Requested</th>
+            <th>Date of Request</th>
+            <th>Status</th>
+
+        </tr>
+    </thead>
+    <tbody *ngFor="let book of chequeBookList;let index = index">
+        <tr style="text-align: center">
+            <td>{{index+1}}</td>
+            <td>{{book.pages}}</td>
+            <td>{{book.date}}</td>
+            <td *ngIf="book.given" class="text-success">Accepted</td>
+            <td *ngIf="!book.given" class="text-danger">Rejected</td>
+
+        </tr>
+
+
+    </tbody>
+</table>
+
+<h2 *ngIf="!isAnyBook()">Sorry there is no Cheque Book Request History</h2>

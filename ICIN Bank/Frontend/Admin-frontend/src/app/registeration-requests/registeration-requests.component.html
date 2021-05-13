@@ -1,0 +1,31 @@
+<table *ngIf="isPandingUser()" class="table table-bordered-md" style="overflow-x:auto;">
+    <thead>
+      <tr style="text-align: center">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th style=" padding-bottom: 1.5%;">UserName</th>
+        <th>DOB</th>
+        <th>KYC Type</th>
+        <th>KYC Id</th>
+        <th style=" padding-bottom: 1.5%;">Confirm Account</th>
+        <th style=" padding-bottom: 1.5%;">Cancel Account</th>
+
+      </tr>
+    </thead>
+    <tbody *ngFor="let users of pandingusers">
+            <tr style="text-align: center">
+              <td>{{users.firstname}}</td>
+              <td>{{users.lastname}}</td>
+              <td>{{users.username}}</td>
+              <td>{{users.dob}}</td>
+              <td>{{users.kyctype}}</td>
+              <td>{{users.kycid}}</td>
+              <td><button class="btn btn-success" (click)="confirm(users.username)">Confirm</button></td>
+              <td><button class="btn btn-success" (click)="decline(users.username)">Cancel</button></td>
+          
+            </tr>
+
+          </tbody>
+        </table>
+
+        <h2 *ngIf="!isPandingUser()" class="text-info">No account request is pending</h2>

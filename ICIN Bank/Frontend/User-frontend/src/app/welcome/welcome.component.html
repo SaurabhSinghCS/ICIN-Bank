@@ -1,0 +1,57 @@
+<div class="landing">
+    <div class="infobox" style="text-align: center;">
+        <br>
+        <h2>Welcome to ICIN Bank </h2>
+        <br>
+        <h5>We offer you actions like Transfer of money, Checkbook request, Deposit, Withdraw</h5>
+        <br>
+        <h4>Happy Banking !!!</h4>
+        <br><br>
+
+        <table class="center">
+
+            <tr>
+                <td>
+                    <h4>Your Savings Account number: </h4>
+                </td>
+                <td>
+                    <h4>{{user.accno}}</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Your Savings Account balance : </h4>
+                </td>
+                <td>
+                    <h4>{{user.samount}}</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Your Primary Account balance : </h4>
+                </td>
+                <td>
+                    <h4>{{user.pamount}}</h4>
+                </td>
+            </tr>
+
+        </table>
+        <div *ngIf="!isrequest && !user.transfer_access">
+            <br>
+            <h2 class="text-info">Click on button if want to Transfer Funds access</h2>
+            <button (click)="transferRequest()">Request</button>
+        </div>
+        <div *ngIf="isrequest && !user.transfer_access">
+            <br>
+            <h2 class="text-info">Transfer Funds access is Not Yet Approved</h2>
+        </div>
+    </div>
+    <div>
+        <br>
+        <h4 class="text-danger">Note:-<strong>Amount is Transfered From Primary Account so make sure sufficient balance is present in Primary Account</strong></h4>
+        <br>
+        <h4 class="text-danger">Note:-<strong>If you want to Transfer Money to Primary Account from Saving account then Enter your same account number to receivers account column in Transfer Funds </strong></h4>
+        <br>
+        <br>
+    </div>
+</div>
