@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-12T08:27:18Z" name="Default suite" finished-at="2021-05-12T08:27:39Z" duration-ms="20695">
+  <suite started-at="2021-05-13T14:52:14Z" name="Default suite" finished-at="2021-05-13T14:52:40Z" duration-ms="26374">
     <groups>
     </groups>
-    <test started-at="2021-05-12T08:27:18Z" name="Default test" finished-at="2021-05-12T08:27:39Z" duration-ms="20695">
-      <class name="com.icin.bank.AdminPortalPositiveTest">
-        <test-method signature="loginTest()[pri:0, instance:com.icin.bank.AdminPortalPositiveTest@2b9ed6da]" started-at="2021-05-12T08:27:18Z" name="loginTest" finished-at="2021-05-12T08:27:39Z" duration-ms="20554" status="PASS">
+    <test started-at="2021-05-13T14:52:14Z" name="Default test" finished-at="2021-05-13T14:52:40Z" duration-ms="26374">
+      <class name="com.icin.bank.UserPortalNegativeTests">
+        <test-method signature="emptyUsernameAndPasswordTest()[pri:0, instance:com.icin.bank.UserPortalNegativeTests@bb9e6dc]" started-at="2021-05-13T14:52:14Z" name="emptyUsernameAndPasswordTest" finished-at="2021-05-13T14:52:24Z" duration-ms="10221" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- com.icin.bank.AdminPortalPositiveTest -->
+        </test-method> <!-- emptyUsernameAndPasswordTest -->
+        <test-method signature="incorrectPasswordTest()[pri:0, instance:com.icin.bank.UserPortalNegativeTests@bb9e6dc]" started-at="2021-05-13T14:52:24Z" name="incorrectPasswordTest" finished-at="2021-05-13T14:52:31Z" duration-ms="7204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectPasswordTest -->
+        <test-method signature="incorrectUsernameTest()[pri:0, instance:com.icin.bank.UserPortalNegativeTests@bb9e6dc]" started-at="2021-05-13T14:52:31Z" name="incorrectUsernameTest" finished-at="2021-05-13T14:52:40Z" duration-ms="8886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incorrectUsernameTest -->
+      </class> <!-- com.icin.bank.UserPortalNegativeTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
