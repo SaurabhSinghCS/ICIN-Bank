@@ -1,0 +1,15 @@
+package com.simplilearn.workshop.service;
+
+import com.simplilearn.workshop.model.Users;
+
+public interface UserService {
+	
+	public Users isValid(String username,String password);
+	
+	public Users findByUsername(String user_Name);
+	
+	public void transferRequest(String username);
+	
+	public void selfTransfer(String username, Double samount, Double pamount);
+
+}

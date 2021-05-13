@@ -1,0 +1,13 @@
+package com.simplilearn.workshop.service;
+
+import java.util.List;
+
+import com.simplilearn.workshop.model.Users;
+
+public interface UserService {
+	
+	public Users isValid(String username,String password);
+	
+	public Users findByUsername(String user_Name);
+
+}

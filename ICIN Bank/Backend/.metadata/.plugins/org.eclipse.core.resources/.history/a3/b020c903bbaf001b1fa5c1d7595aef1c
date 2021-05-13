@@ -1,0 +1,15 @@
+package com.simplilearn.workshop.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "chequebookhistory")
+public class Chequebookhistory {
+
+	private int id;
+	private String username;
+	private int pages;
+	private String date;
+	private Boolean given;
+}

@@ -1,0 +1,44 @@
+package com.simplilearn.workshop.details;
+
+import java.time.LocalDate;
+
+public class TransferDetails {
+	
+	private long saccount;
+	private long raccount;
+	private Double amount;
+	private LocalDate date;
+	
+	public long getSaccount() {
+		return saccount;
+	}
+	
+	public void setSaccount(long saccount) {
+		this.saccount = saccount;
+	}
+	
+	public long getRaccount() {
+		return raccount;
+	}
+	
+	public void setRaccount(long raccount) {
+		this.raccount = raccount;
+	}
+	
+	public Double getAmount() {
+		return amount;
+	}
+	
+	public void setAmount(Double amount) {
+		this.amount = amount;
+	}
+	
+	public LocalDate getDate() {
+		return date;
+	}
+	
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+
+}

@@ -1,0 +1,83 @@
+package com.simplilearn.workshop.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.simplilearn.workshop.details.UserNameDetails;
+import com.simplilearn.workshop.model.ChequeBook;
+import com.simplilearn.workshop.model.TransferRequest;
+import com.simplilearn.workshop.service.ChequeBookService;
+import com.simplilearn.workshop.service.TransferRequestService;
+
+@RestController
+public class RequestController {
+	
+	@Autowired
+	private ChequeBookService chequeBookService;
+	
+	@Autowired
+	private TransferRequestService transferRequestService;
+
+	@RequestMapping(value = "/chequeBook" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.GET)
+	@CrossOrigin(origins = "http://localhost:4201")
+	public List<ChequeBook> chequeBook(){
+		
+		return chequeBookService.findAll();
+	}
+	
+	
+	@RequestMapping(value = "/confirmChequeBook" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.POST)
+	@CrossOrigin(origins = "http://localhost:4201")
+	public ChequeBook confirmChequeBook(@RequestBody UserNameDetails details){
+		
+		ChequeBook chequeBook = chequeBookService.findByUsername(details.getUsername());
+		
+		chequeBookService.insertChequebookhistory(chequeBook.getUsername(), 
+				chequeBook.getPages(), chequeBook.getDate(), true);
+		
+		if(chequeBookService.findByUsernameAndPagesAndDate(chequeBook.getUsername(), chequeBook.getPages(),
+				chequeBook.getDate()) != null) {
+			chequeBookService.deleteByUsername(chequeBook.getUsername());
+			return chequeBookService.findByUsername(details.getUsername());
+		}
+		return chequeBookService.findByUsername(details.getUsername());
+	}
+	
+	@RequestMapping(value = "/declineChequeBook" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.POST)
+	@CrossOrigin(origins = "http://localhost:4201")
+	public ChequeBook declineChequeBook(@RequestBody UserNameDetails details){
+		
+		ChequeBook chequeBook = chequeBookService.findByUsername(details.getUsername());
+		
+		chequeBookService.insertChequebookhistory(chequeBook.getUsername(), 
+				chequeBook.getPages(), chequeBook.getDate(), false);
+		
+		if(chequeBookService.findByUsernameAndPagesAndDate(chequeBook.getUsername(), chequeBook.getPages(),
+				chequeBook.getDate()) != null) {
+			chequeBookService.deleteByUsername(chequeBook.getUsername());
+			return chequeBookService.findByUsername(details.getUsername());
+		}
+		return chequeBookService.findByUsername(details.getUsername());
+		
+	}
+	
+	
+	// Getting all transfer requests
+	@RequestMapping(value = "/allTransferRequests" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.GET)
+	@CrossOrigin(origins = "http://localhost:4201")
+	public List<TransferRequest> allTransferRequests(){
+		
+		return transferRequestService.findAll();
+		
+	}
+	
+	TransferRequest
+	
+}

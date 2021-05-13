@@ -1,0 +1,63 @@
+package com.simplilearn.workshop.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.simplilearn.workshop.details.UserNameDetails;
+import com.simplilearn.workshop.model.ChequeBook;
+import com.simplilearn.workshop.model.PandingUser;
+import com.simplilearn.workshop.model.Users;
+import com.simplilearn.workshop.service.ChequeBookService;
+
+@RestController
+public class RequestController {
+	
+	@Autowired
+	private ChequeBookService chequeBookService;
+
+	@RequestMapping(value = "/chequeBook" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.GET)
+	@CrossOrigin(origins = "http://localhost:4201")
+	public List<ChequeBook> chequeBook(){
+		
+		return chequeBookService.findAll();
+	}
+	
+	
+	@RequestMapping(value = "/confirmUser" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.POST)
+	@CrossOrigin(origins = "http://localhost:4201")
+	public Users confirmUser(@RequestBody UserNameDetails details){
+		
+		ChequeBook chequeBook = chequeBookService.findByUsername(details.getUsername());
+		
+		chequeBookService.insertChequebookhistory(chequeBook.getUsername(), 
+				chequeBook.getPages(), chequeBook.getDate(), true);
+		
+		if(chequeBookService.findByUsernameAndPagesAndDate(chequeBook.getUsername(), chequeBook.getPages(),
+				chequeBook.getDate()) != null) {
+			pandingUserService.deleteByUsername(details.getUsername());
+			if(pandingUserService.findByUserName(details.getUsername()) == null) {
+				return userService.findByUsername(details.getUsername());
+			}else {
+				return null;
+			}
+		}
+		return null;
+	}
+	
+	@RequestMapping(value = "/declineUser" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.POST)
+	@CrossOrigin(origins = "http://localhost:4201")
+	public PandingUser declineUser(@RequestBody UserNameDetails details){
+		
+		pandingUserService.deleteByUsername(details.getUsername());
+		
+		return pandingUserService.findByUserName(details.getUsername());
+		
+	}
+}

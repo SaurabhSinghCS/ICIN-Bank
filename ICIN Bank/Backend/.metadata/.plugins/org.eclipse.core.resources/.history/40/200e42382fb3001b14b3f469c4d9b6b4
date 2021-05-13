@@ -1,0 +1,6 @@
+package com.simplilearn.workshop.response;
+
+public class UpdateUserResponse {
+
+	
+}

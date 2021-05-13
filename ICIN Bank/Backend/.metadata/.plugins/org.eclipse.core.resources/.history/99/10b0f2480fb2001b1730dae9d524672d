@@ -1,0 +1,9 @@
+package com.simplilearn.workshop.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.simplilearn.workshop.model.TransferRequest;
+
+public interface TransferRequestsRepository extends JpaRepository<TransferRequest, Integer> {
+
+}

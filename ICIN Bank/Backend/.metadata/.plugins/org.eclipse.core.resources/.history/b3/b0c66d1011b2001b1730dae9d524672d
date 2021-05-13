@@ -1,0 +1,6 @@
+package com.simplilearn.workshop.service;
+
+
+public class TransferRequestServiceImpl implements TransferRequestService {
+
+}

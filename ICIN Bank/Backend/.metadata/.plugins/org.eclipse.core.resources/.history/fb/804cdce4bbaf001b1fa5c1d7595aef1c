@@ -1,0 +1,7 @@
+package com.simplilearn.workshop.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ChequebookhistoryRepository extends JpaRepository<T, ID> {
+
+}

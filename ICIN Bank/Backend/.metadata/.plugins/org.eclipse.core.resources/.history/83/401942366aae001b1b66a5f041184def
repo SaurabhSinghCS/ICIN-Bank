@@ -1,0 +1,12 @@
+package com.simplilearn.workshop.details;
+
+import java.time.LocalDate;
+
+public class TransferDetails {
+	
+	private long saccount;
+	private long raccount;
+	private Double amount;
+	private LocalDate date;
+
+}
