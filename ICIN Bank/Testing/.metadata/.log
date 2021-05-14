@@ -4815,3 +4815,18 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://do
 !MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.pde.java16patch,1.2.100.v20210305-0753_BETA_JAVA16
 !SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2021-05-13 20:58:06.517
 !MESSAGE No repository found containing: org.eclipse.update.feature,org.hibernate.eclipse.feature,5.4.12.v20210330-1153
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-13 23:23:14.314
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.LQOqXtJN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-13 23:23:14.319
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.LQOqXtJN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-13 23:23:14.320
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-13 23:23:14.321
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.LQOqXtJN => OK
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-05-13 23:23:17.341
+!MESSAGE The workspace will exit with unsaved changes in this session.
