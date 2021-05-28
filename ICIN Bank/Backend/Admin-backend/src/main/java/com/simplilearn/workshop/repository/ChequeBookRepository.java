@@ -21,7 +21,7 @@ public interface ChequeBookRepository extends JpaRepository<ChequeBook, Integer>
 	
 	@Modifying
 	@Query(value = 
-		    "insert into ChequeBook (user_name, pages) values (?1,?2)",
+		    "insert into chequebook (user_name, pages) values (?1,?2)",
 		    nativeQuery = true)
 	public void insertChequeBook(String username,int pages);
 	

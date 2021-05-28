@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [AllTests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="PositiveTests(failed)" verbose="0">
+    <classes>
+      <class name="com.icin.bank.UserPortalPositiveTests">
+        <methods>
+          <include name="ChequeBookTest"/>
+          <include name="TransactionTest"/>
+          <include name="TransferTest"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.icin.bank.UserPortalPositiveTests -->
+    </classes>
+  </test> <!-- PositiveTests(failed) -->
   <test thread-count="5" name="NegativeTests(failed)" verbose="0">
     <classes>
       <class name="com.icin.bank.UserPortalNegativeTests">

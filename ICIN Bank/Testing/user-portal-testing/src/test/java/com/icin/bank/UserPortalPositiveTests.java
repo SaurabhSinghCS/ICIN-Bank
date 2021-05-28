@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 
 public class UserPortalPositiveTests {
 
+	String url = "http://angular-front.s3-website-us-east-1.amazonaws.com/";
+	
 	@Test
 	public void loginTest() throws Exception {
 		
@@ -24,7 +26,7 @@ public class UserPortalPositiveTests {
 		//maximize browser window
 		driver.manage().window().maximize();
 		
-		String url = "http://localhost:4200/";
+		
 		// open test page
 		driver.get(url);
 		System.out.println("page is opened");
@@ -52,7 +54,7 @@ public class UserPortalPositiveTests {
 		//verifications
 		
 		//new url
-		String expectedUrl = "http://localhost:4200/welcome";
+		String expectedUrl = url +"welcome";
 //		String expectedUrl = "https://the-internet.herokuapp.com/secure-broken"; error
 		String actualUrl = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl, expectedUrl, "Actual path url is not the same as expected");
@@ -71,7 +73,7 @@ public class UserPortalPositiveTests {
 		
 		//successful login message
 		
-		String expectedUrl2 = "http://localhost:4200/";
+		String expectedUrl2 = url;
 		String actualUrl2 = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl2, expectedUrl2, "Actual path url2 is not the same as expected");
 			
@@ -96,7 +98,6 @@ public class UserPortalPositiveTests {
 		//maximize browser window
 		driver.manage().window().maximize();
 		
-		String url = "http://localhost:4200/";
 		// open test page
 		driver.get(url);
 		System.out.println("page is opened");
@@ -124,7 +125,7 @@ public class UserPortalPositiveTests {
 		//verifications
 		
 		//new url
-		String expectedUrl = "http://localhost:4200/welcome";
+		String expectedUrl = url+"welcome";
 //		String expectedUrl = "https://the-internet.herokuapp.com/secure-broken"; error
 		String actualUrl = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl, expectedUrl, "Actual path url is not the same as expected");
@@ -139,7 +140,7 @@ public class UserPortalPositiveTests {
 		
 		
 		// checking transactional History
-		String expectedUrl1 = "http://localhost:4200/transaction-history";
+		String expectedUrl1 = url+"transaction-history";
 //		String expectedUrl = "https://the-internet.herokuapp.com/secure-broken"; error
 		String actualUrl1 = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl1, expectedUrl1, "Actual path url is not the same as expected");
@@ -163,7 +164,7 @@ public class UserPortalPositiveTests {
 		
 		//successful login message
 		
-		String expectedUrl2 = "http://localhost:4200/";
+		String expectedUrl2 = url;
 		String actualUrl2 = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl2, expectedUrl2, "Actual path url2 is not the same as expected");
 			
@@ -188,7 +189,6 @@ public class UserPortalPositiveTests {
 		//maximize browser window
 		driver.manage().window().maximize();
 		
-		String url = "http://localhost:4200/";
 		// open test page
 		driver.get(url);
 		System.out.println("page is opened");
@@ -216,7 +216,7 @@ public class UserPortalPositiveTests {
 		//verifications
 		
 		//new url
-		String expectedUrl = "http://localhost:4200/welcome";
+		String expectedUrl = url+"welcome";
 //		String expectedUrl = "https://the-internet.herokuapp.com/secure-broken"; error
 		String actualUrl = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl, expectedUrl, "Actual path url is not the same as expected");
@@ -229,7 +229,7 @@ public class UserPortalPositiveTests {
 		
 		
 		// checking transactional History
-		String expectedUrl1 = "http://localhost:4200/transfer-history";
+		String expectedUrl1 = url+"transfer-history";
 //		String expectedUrl = "https://the-internet.herokuapp.com/secure-broken"; error
 		String actualUrl1 = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl1, expectedUrl1, "Actual path url is not the same as expected");
@@ -253,7 +253,7 @@ public class UserPortalPositiveTests {
 		
 		//successful login message
 		
-		String expectedUrl2 = "http://localhost:4200/";
+		String expectedUrl2 = url;
 		String actualUrl2 = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl2, expectedUrl2, "Actual path url2 is not the same as expected");
 			
@@ -278,7 +278,6 @@ public class UserPortalPositiveTests {
 		//maximize browser window
 		driver.manage().window().maximize();
 		
-		String url = "http://localhost:4200/";
 		// open test page
 		driver.get(url);
 		System.out.println("page is opened");
@@ -306,7 +305,7 @@ public class UserPortalPositiveTests {
 		//verifications
 		
 		//new url
-		String expectedUrl = "http://localhost:4200/welcome";
+		String expectedUrl = url+"welcome";
 //		String expectedUrl = "https://the-internet.herokuapp.com/secure-broken"; error
 		String actualUrl = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl, expectedUrl, "Actual path url is not the same as expected");
@@ -321,7 +320,7 @@ public class UserPortalPositiveTests {
 		
 		
 		// checking cheque book
-		String expectedUrl1 = "http://localhost:4200/cheque-book";
+		String expectedUrl1 = url+"cheque-book";
 //		String expectedUrl = "https://the-internet.herokuapp.com/secure-broken"; error
 		String actualUrl1 = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl1, expectedUrl1, "Actual path url is not the same as expected");
@@ -351,7 +350,7 @@ public class UserPortalPositiveTests {
 		
 		//successful login message
 		
-		String expectedUrl2 = "http://localhost:4200/";
+		String expectedUrl2 = url;
 		String actualUrl2 = driver.getCurrentUrl();
 		Assert.assertEquals(actualUrl2, expectedUrl2, "Actual path url2 is not the same as expected");
 			

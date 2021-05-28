@@ -19,7 +19,7 @@ import com.simplilearn.workshop.service.TransferRequestService;
 import com.simplilearn.workshop.service.UserService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class RequestController {
 	
 	@Autowired

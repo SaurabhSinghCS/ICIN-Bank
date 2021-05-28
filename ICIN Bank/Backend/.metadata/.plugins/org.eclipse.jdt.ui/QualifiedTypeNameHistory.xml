@@ -58,6 +58,6 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.simplilearn.workshop.details.UpdateUserDetails"/>
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
-    <fullyQualifiedTypeName name="com.simplilearn.workshop.model.Users"/>
     <fullyQualifiedTypeName name="com.simplilearn.workshop.response.UpdateResponseDetails"/>
+    <fullyQualifiedTypeName name="com.simplilearn.workshop.model.Users"/>
 </qualifiedTypeNameHistroy>

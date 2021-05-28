@@ -21,7 +21,7 @@ import com.simplilearn.workshop.service.TransferService;
 import com.simplilearn.workshop.service.UserService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*",allowedHeaders = "*")
 public class TransferController {
 	
 	@Autowired
@@ -45,6 +45,8 @@ public class TransferController {
 	public TransferRequest transferRequest(@RequestBody UserNameDetails details) {
 		
 		Users user = userService.findByUsername(details.getUsername());
+		
+		System.out.println("--------> transfer request ----> "+details.getUsername());
 		
 		transferRequestService.insertRequest(details.getUsername(), user.getAccno());
 		

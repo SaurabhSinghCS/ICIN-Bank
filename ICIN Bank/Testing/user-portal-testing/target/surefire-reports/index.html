@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-AllTests" class="navigator-link">
-              <span class="suite-name border-passed">AllTests</span>
+              <span class="suite-name border-failed">AllTests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-AllTests" class="navigator-link ">
-                    <span>D:\Java FSD\ICIN Bank\Testing\user-portal-testing\src\test\resources\TestSuites\AllTests.xml</span>
+                    <span>D:\Java FSD\ICIN-Bank\ICIN Bank\Testing\user-portal-testing\src\test\resources\TestSuites\AllTests.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 5 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AllTests" class="hide-methods failed suite-AllTests"> (hide)</a> <!-- hide-methods failed suite-AllTests -->
+                      <a href="#" panel-name="suite-AllTests" class="show-methods failed suite-AllTests"> (show)</a> <!-- show-methods failed suite-AllTests -->
+                    </span>
+                    <div class="method-list-content failed suite-AllTests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalPositiveTests" class="method navigator-link" hash-for-method="ChequeBookTest">ChequeBookTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalPositiveTests" class="method navigator-link" hash-for-method="TransactionTest">TransactionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalPositiveTests" class="method navigator-link" hash-for-method="TransferTest">TransferTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalNegativeTests" class="method navigator-link" hash-for-method="incorrectPasswordTest">incorrectPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalPositiveTests" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AllTests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,21 +134,6 @@
                       <a href="#" panel-name="suite-AllTests" class="show-methods passed suite-AllTests"> (show)</a> <!-- show-methods passed suite-AllTests -->
                     </span>
                     <div class="method-list-content passed suite-AllTests">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalPositiveTests" class="method navigator-link" hash-for-method="ChequeBookTest">ChequeBookTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalPositiveTests" class="method navigator-link" hash-for-method="TransactionTest">TransactionTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalPositiveTests" class="method navigator-link" hash-for-method="TransferTest">TransferTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AllTests" title="com.icin.bank.AdminPortalPositiveTests" class="method navigator-link" hash-for-method="diableUserTest">diableUserTest</a> <!-- method navigator-link -->
@@ -132,22 +151,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalNegativeTests" class="method navigator-link" hash-for-method="incorrectPasswordTest">incorrectPasswordTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalNegativeTests" class="method navigator-link" hash-for-method="incorrectUsernameTest">incorrectUsernameTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AllTests" title="com.icin.bank.AdminPortalPositiveTests" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-AllTests" title="com.icin.bank.UserPortalPositiveTests" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-AllTests -->
@@ -162,35 +171,133 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-AllTests" class="panel AllTests">
-          <div class="suite-AllTests-class-passed">
+          <div class="suite-AllTests-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">com.icin.bank.UserPortalPositiveTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChequeBookTest">
+                  </a> <!-- ChequeBookTest -->
+                  <span class="method-name">ChequeBookTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//app-root//app-navbar/nav/ul[@class=&apos;navbar-nav&apos;]//a[@href=&apos;/cheque-book&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HSC-J33TZF2&apos;, ip: &apos;172.18.208.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAURSI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58743}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f9482dc1df54af92404b76628b55dc0b
+*** Element info: {Using=xpath, value=//app-root//app-navbar/nav/ul[@class=&apos;navbar-nav&apos;]//a[@href=&apos;/cheque-book&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.icin.bank.UserPortalPositiveTests.ChequeBookTest(UserPortalPositiveTests.java:315)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TransactionTest">
+                  </a> <!-- TransactionTest -->
+                  <span class="method-name">TransactionTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//app-root//app-navbar/nav/ul[@class=&apos;navbar-nav&apos;]//a[@href=&apos;/transaction-history&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HSC-J33TZF2&apos;, ip: &apos;172.18.208.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAURSI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 602f144751b90b9ce7f39a6d600dadf6
+*** Element info: {Using=xpath, value=//app-root//app-navbar/nav/ul[@class=&apos;navbar-nav&apos;]//a[@href=&apos;/transaction-history&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.icin.bank.UserPortalPositiveTests.TransactionTest(UserPortalPositiveTests.java:135)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TransferTest">
+                  </a> <!-- TransferTest -->
+                  <span class="method-name">TransferTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Actual path url is not the same as expected expected [http://angular-front.s3-website-us-east-1.amazonaws.com/welcome] but found [http://angular-front.s3-website-us-east-1.amazonaws.com/]
+	at com.icin.bank.UserPortalPositiveTests.TransferTest(UserPortalPositiveTests.java:222)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest">
+                  </a> <!-- loginTest -->
+                  <span class="method-name">loginTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//app-root//app-navbar/nav/ul[@class=&apos;navbar-nav&apos;]//a[@href=&apos;#&apos;]&quot;}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;HSC-J33TZF2&apos;, ip: &apos;172.18.208.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAURSI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 62dab9276f711c335e72b086ce94df18
+*** Element info: {Using=xpath, value=//app-root//app-navbar/nav/ul[@class=&apos;navbar-nav&apos;]//a[@href=&apos;#&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.icin.bank.UserPortalPositiveTests.loginTest(UserPortalPositiveTests.java:64)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AllTests-class-failed -->
+          <div class="suite-AllTests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.icin.bank.UserPortalNegativeTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="emptyUsernameAndPasswordTest">
-                  </a> <!-- emptyUsernameAndPasswordTest -->
-                  <span class="method-name">emptyUsernameAndPasswordTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="incorrectPasswordTest">
                   </a> <!-- incorrectPasswordTest -->
                   <span class="method-name">incorrectPasswordTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="incorrectUsernameTest">
-                  </a> <!-- incorrectUsernameTest -->
-                  <span class="method-name">incorrectUsernameTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Actual error message does not contains expected. 
+Actual :
+Expected :Invalid Credentials expected [true] but found [false]
+	at com.icin.bank.UserPortalNegativeTests.incorrectPasswordTest(UserPortalNegativeTests.java:95)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-AllTests-class-passed -->
+          </div> <!-- suite-AllTests-class-failed -->
           <div class="suite-AllTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -223,35 +330,21 @@
           <div class="suite-AllTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.icin.bank.UserPortalPositiveTests</span>
+              <span class="class-name">com.icin.bank.UserPortalNegativeTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ChequeBookTest">
-                  </a> <!-- ChequeBookTest -->
-                  <span class="method-name">ChequeBookTest</span>
+                  <a name="emptyUsernameAndPasswordTest">
+                  </a> <!-- emptyUsernameAndPasswordTest -->
+                  <span class="method-name">emptyUsernameAndPasswordTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TransactionTest">
-                  </a> <!-- TransactionTest -->
-                  <span class="method-name">TransactionTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TransferTest">
-                  </a> <!-- TransferTest -->
-                  <span class="method-name">TransferTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
+                  <a name="incorrectUsernameTest">
+                  </a> <!-- incorrectUsernameTest -->
+                  <span class="method-name">incorrectUsernameTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -259,7 +352,7 @@
         </div> <!-- panel AllTests -->
         <div panel-name="test-xml-AllTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Java FSD\ICIN Bank\Testing\user-portal-testing\src\test\resources\TestSuites\AllTests.xml</span>
+            <span class="header-content">D:\Java FSD\ICIN-Bank\ICIN Bank\Testing\user-portal-testing\src\test\resources\TestSuites\AllTests.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -321,43 +414,43 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'enableUserTest')
 data.setCell(0, 2, 'com.icin.bank.AdminPortalPositiveTests')
-data.setCell(0, 3, 20184);
+data.setCell(0, 3, 22103);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ChequeBookTest')
-data.setCell(1, 2, 'com.icin.bank.UserPortalPositiveTests')
-data.setCell(1, 3, 18788);
+data.setCell(1, 1, 'diableUserTest')
+data.setCell(1, 2, 'com.icin.bank.AdminPortalPositiveTests')
+data.setCell(1, 3, 19457);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TransferTest')
-data.setCell(2, 2, 'com.icin.bank.UserPortalPositiveTests')
-data.setCell(2, 3, 18531);
+data.setCell(2, 1, 'loginTest')
+data.setCell(2, 2, 'com.icin.bank.AdminPortalPositiveTests')
+data.setCell(2, 3, 17830);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TransactionTest')
+data.setCell(3, 1, 'ChequeBookTest')
 data.setCell(3, 2, 'com.icin.bank.UserPortalPositiveTests')
-data.setCell(3, 3, 18260);
+data.setCell(3, 3, 15115);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginTest')
+data.setCell(4, 1, 'TransactionTest')
 data.setCell(4, 2, 'com.icin.bank.UserPortalPositiveTests')
-data.setCell(4, 3, 18223);
+data.setCell(4, 3, 15065);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'diableUserTest')
-data.setCell(5, 2, 'com.icin.bank.AdminPortalPositiveTests')
-data.setCell(5, 3, 18047);
+data.setCell(5, 1, 'loginTest')
+data.setCell(5, 2, 'com.icin.bank.UserPortalPositiveTests')
+data.setCell(5, 3, 14927);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginTest')
-data.setCell(6, 2, 'com.icin.bank.AdminPortalPositiveTests')
-data.setCell(6, 3, 15863);
+data.setCell(6, 1, 'TransferTest')
+data.setCell(6, 2, 'com.icin.bank.UserPortalPositiveTests')
+data.setCell(6, 3, 14768);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'emptyUsernameAndPasswordTest')
+data.setCell(7, 1, 'incorrectUsernameTest')
 data.setCell(7, 2, 'com.icin.bank.UserPortalNegativeTests')
-data.setCell(7, 3, 9618);
+data.setCell(7, 3, 11304);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'incorrectUsernameTest')
+data.setCell(8, 1, 'emptyUsernameAndPasswordTest')
 data.setCell(8, 2, 'com.icin.bank.UserPortalNegativeTests')
-data.setCell(8, 3, 8749);
+data.setCell(8, 3, 10471);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'incorrectPasswordTest')
 data.setCell(9, 2, 'com.icin.bank.UserPortalNegativeTests')
-data.setCell(9, 3, 7314);
+data.setCell(9, 3, 7784);
 window.suiteTableData['AllTests']= { tableData: data, tableDiv: 'times-div-AllTests'}
 return data;
 }
@@ -390,50 +483,60 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.icin.bank.UserPortalPositiveTests</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">ChequeBookTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TransactionTest</span>
-                <span class="method-start">18790 ms</span>
+                <span class="method-start">15125 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TransferTest</span>
-                <span class="method-start">37051 ms</span>
+                <span class="method-start">30193 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginTest</span>
-                <span class="method-start">55583 ms</span>
+                <span class="method-start">44961 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.icin.bank.AdminPortalPositiveTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">73808 ms</span>
+                <span class="method-start">59891 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">diableUserTest</span>
-                <span class="method-start">89673 ms</span>
+                <span class="method-start">77722 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">enableUserTest</span>
-                <span class="method-start">107721 ms</span>
+                <span class="method-start">97180 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.icin.bank.UserPortalNegativeTests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">emptyUsernameAndPasswordTest</span>
-                <span class="method-start">127934 ms</span>
+                <span class="method-start">119319 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">incorrectPasswordTest</span>
-                <span class="method-start">137552 ms</span>
+                <span class="method-start">129790 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">incorrectUsernameTest</span>
-                <span class="method-start">144866 ms</span>
+                <span class="method-start">137575 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -12,7 +12,7 @@ public interface TransferRequestRepository extends JpaRepository<TransferRequest
 
 	@Modifying
 	@Query(value = 
-		    "insert into TransferRequest (username, accno)"
+		    "insert into transferrequest (username, accno)"
 		    + " values (?1,?2)",
 		    nativeQuery = true)
 	public void insertRequest(String username,Long accno);

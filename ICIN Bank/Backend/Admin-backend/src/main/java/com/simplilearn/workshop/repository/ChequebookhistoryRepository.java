@@ -16,7 +16,7 @@ public interface ChequebookhistoryRepository extends JpaRepository<Chequebookhis
 	
 	@Modifying
 	@Query(value = 
-		    "insert into Chequebookhistory (username, pages, date, given)"
+		    "insert into chequebookhistory (username, pages, date, given)"
 		    + " values (?1,?2,?3,?4)",
 		    nativeQuery = true)
 	public void insertChequebookhistory(String username, int pages, String date, Boolean given);

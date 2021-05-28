@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_GOyEsbDNEeultIBJB3atag" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_GOyEsrDNEeultIBJB3atag" bindingContexts="_GOyryLDNEeultIBJB3atag">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UserPortalNegativeTests.java&quot; tooltip=&quot;user-portal-testing/src/test/java/com/icin/bank/UserPortalNegativeTests.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/user-portal-testing/src/test/java/com/icin/bank/UserPortalNegativeTests.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;.project&quot; tooltip=&quot;D:\Java FSD\ICIN-Bank\ICIN Bank\Testing\user-portal-testing\.project&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/D:/Java%20FSD/ICIN-Bank/ICIN%20Bank/Testing/user-portal-testing/.project&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UserPortalPositiveTests.java&quot; tooltip=&quot;user-portal-testing/src/test/java/com/icin/bank/UserPortalPositiveTests.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/user-portal-testing/src/test/java/com/icin/bank/UserPortalPositiveTests.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AdminPortalPositiveTests.java&quot; tooltip=&quot;user-portal-testing/src/test/java/com/icin/bank/AdminPortalPositiveTests.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/user-portal-testing/src/test/java/com/icin/bank/AdminPortalPositiveTests.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UserPortalNegativeTests.java&quot; tooltip=&quot;user-portal-testing/src/test/java/com/icin/bank/UserPortalNegativeTests.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/user-portal-testing/src/test/java/com/icin/bank/UserPortalNegativeTests.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;.project&quot; tooltip=&quot;D:\Java FSD\ICIN-Bank\ICIN Bank\Testing\user-portal-testing\.project&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/D:/Java%20FSD/ICIN-Bank/ICIN%20Bank/Testing/user-portal-testing/.project&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_GOyEsrDNEeultIBJB3atag" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_G0uqYLDNEeultIBJB3atag" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
@@ -10,7 +10,7 @@
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1620568081544"/>
     <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
     <tags>topLevel</tags>
-    <tags>shellMinimized</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_G0uqYLDNEeultIBJB3atag" selectedElement="_G0uqYbDNEeultIBJB3atag" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_G0uqYbDNEeultIBJB3atag" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_HN0f0LDNEeultIBJB3atag">
         <children xsi:type="advanced:Perspective" xmi:id="_HN0f0LDNEeultIBJB3atag" elementId="org.eclipse.jst.j2ee.J2EEPerspective" selectedElement="_HN1G4LDNEeultIBJB3atag" label="Java EE" iconURI="platform:/plugin/org.eclipse.jst.j2ee.ui/icons/full/cview16/j2ee_perspective.gif">
@@ -77,8 +77,10 @@
           <tags>persp.newWizSC:org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard</tags>
           <tags>persp.newWizSC:org.eclipse.jpt.jpa.ui.wizard.newJpaProject</tags>
           <tags>persp.perspSC:org.eclipse.jpt.ui.jpaPerspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_HN1G4LDNEeultIBJB3atag" selectedElement="_HN1G5rDNEeultIBJB3atag" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_HN1G4LDNEeultIBJB3atag" selectedElement="_HN1G4bDNEeultIBJB3atag" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_HN1G4bDNEeultIBJB3atag" elementId="topLeft" containerData="2500" selectedElement="_HN1G4rDNEeultIBJB3atag">
+              <tags>active</tags>
+              <tags>noFocus</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_HN1G4rDNEeultIBJB3atag" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_HErx8LDNEeultIBJB3atag" closeable="true">
                 <tags>View</tags>
                 <tags>categoryTag:General</tags>
@@ -96,7 +98,7 @@
                 <tags>categoryTag:Java Browsing</tags>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_HN1G5rDNEeultIBJB3atag" containerData="7500" selectedElement="_HN1G7bDNEeultIBJB3atag">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_HN1G5rDNEeultIBJB3atag" containerData="7500" selectedElement="_HN1G57DNEeultIBJB3atag">
               <children xsi:type="basic:PartSashContainer" xmi:id="_HN1G57DNEeultIBJB3atag" containerData="7000" selectedElement="_HN1G6LDNEeultIBJB3atag" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_HN1G6LDNEeultIBJB3atag" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_HEbTQLDNEeultIBJB3atag"/>
                 <children xsi:type="basic:PartStack" xmi:id="_HN1G6bDNEeultIBJB3atag" elementId="topRight" containerData="3000" selectedElement="_HN1G6rDNEeultIBJB3atag">
@@ -116,8 +118,6 @@
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_HN1G7bDNEeultIBJB3atag" elementId="bottomRight" containerData="3000" selectedElement="_HN1G9bDNEeultIBJB3atag">
                 <tags>Java</tags>
-                <tags>active</tags>
-                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_HN1G7rDNEeultIBJB3atag" elementId="org.eclipse.ui.views.AllMarkersView" ref="_HNqu0LDNEeultIBJB3atag" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -212,7 +212,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_HEbTQLDNEeultIBJB3atag" elementId="org.eclipse.ui.editorss" selectedElement="_HEbTQbDNEeultIBJB3atag">
-      <children xsi:type="basic:PartStack" xmi:id="_HEbTQbDNEeultIBJB3atag" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_r-wKkLP6EeuTktwkC8XSIQ">
+      <children xsi:type="basic:PartStack" xmi:id="_HEbTQbDNEeultIBJB3atag" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_t9vfgL9uEeu99LhywIg0lw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="basic:Part" xmi:id="_koQ6oLP5EeuTktwkC8XSIQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label=".project" iconURI="platform:/plugin/org.eclipse.wst.xml.ui/icons/xmldoc.gif" closeable="true">
@@ -222,7 +222,19 @@
           <tags>org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_r-wKkLP6EeuTktwkC8XSIQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UserPortalNegativeTests.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UserPortalNegativeTests.java&quot; partName=&quot;UserPortalNegativeTests.java&quot; title=&quot;UserPortalNegativeTests.java&quot; tooltip=&quot;user-portal-testing/src/test/java/com/icin/bank/UserPortalNegativeTests.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/user-portal-testing/src/test/java/com/icin/bank/UserPortalNegativeTests.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;1127&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UserPortalNegativeTests.java&quot; partName=&quot;UserPortalNegativeTests.java&quot; title=&quot;UserPortalNegativeTests.java&quot; tooltip=&quot;user-portal-testing/src/test/java/com/icin/bank/UserPortalNegativeTests.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/user-portal-testing/src/test/java/com/icin/bank/UserPortalNegativeTests.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3711&quot; selectionTopPixel=&quot;2035&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_t9vfgL9uEeu99LhywIg0lw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="UserPortalPositiveTests.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;UserPortalPositiveTests.java&quot; partName=&quot;UserPortalPositiveTests.java&quot; title=&quot;UserPortalPositiveTests.java&quot; tooltip=&quot;user-portal-testing/src/test/java/com/icin/bank/UserPortalPositiveTests.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/user-portal-testing/src/test/java/com/icin/bank/UserPortalPositiveTests.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;35&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;7249&quot; selectionTopPixel=&quot;2997&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>removeOnHide</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_pXhs4L9vEeu99LhywIg0lw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="AdminPortalPositiveTests.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AdminPortalPositiveTests.java&quot; partName=&quot;AdminPortalPositiveTests.java&quot; title=&quot;AdminPortalPositiveTests.java&quot; tooltip=&quot;user-portal-testing/src/test/java/com/icin/bank/AdminPortalPositiveTests.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/user-portal-testing/src/test/java/com/icin/bank/AdminPortalPositiveTests.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;7535&quot; selectionTopPixel=&quot;859&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -235,6 +247,8 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1620568081544&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;lastRecentlyUsedFilters/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_HevQsLDNEeultIBJB3atag" elementId="org.eclipse.ui.navigator.ProjectExplorer">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -331,8 +345,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_XRDS4LDNEeultIBJB3atag" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -381,7 +393,7 @@
       <tags>View</tags>
       <tags>categoryTag:General</tags>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_p3rLMLL7EeueNJ2sWfSpew" elementId="org.testng.eclipse.ResultView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Results of running class UserPortalNegativeTests" iconURI="platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif" tooltip="" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_p3rLMLL7EeueNJ2sWfSpew" elementId="org.testng.eclipse.ResultView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="TestNG" iconURI="platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewBundle" value="org.testng.eclipse"/>
       <persistedState key="originalCompatibilityViewClass" value="org.testng.eclipse.ui.TestRunnerViewPart"/>
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view FailureRunView.tab.title.ratio=&quot;500&quot; HierarchyRunView.tab.title.ratio=&quot;500&quot; orientation=&quot;2&quot; page=&quot;0&quot;/>"/>
@@ -400,7 +412,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_G6hJULDNEeultIBJB3atag" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_YJzO0LP5EeuTktwkC8XSIQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_GQIvlbDNEeultIBJB3atag"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_gQyAQL9uEeu99LhywIg0lw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_GQIvlbDNEeultIBJB3atag"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_G6hwYLDNEeultIBJB3atag" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -437,7 +449,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_G6iXcrDNEeultIBJB3atag" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_YJ4HULP5EeuTktwkC8XSIQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_GQHhurDNEeultIBJB3atag"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_gQ5VAL9uEeu99LhywIg0lw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_GQHhurDNEeultIBJB3atag"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_G6iXc7DNEeultIBJB3atag" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3063,7 +3075,7 @@
   <addons xmi:id="_GOyr1LDNEeultIBJB3atag" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_GOyr1bDNEeultIBJB3atag" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_GPJRELDNEeultIBJB3atag" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_X0aNobP5EeuTktwkC8XSIQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_fqxJIL9uEeu99LhywIg0lw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_GP438LDNEeultIBJB3atag" elementId="org.springframework.tooling.ls.eclipse.gotosymbol.commands.category" name="STS4"/>
   <categories xmi:id="_GP5fALDNEeultIBJB3atag" elementId="org.eclipse.ui.category.edit" name="Edit"/>

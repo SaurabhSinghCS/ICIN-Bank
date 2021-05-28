@@ -14,7 +14,7 @@ export class TransferServiceService {
   constructor(private http : HttpClient,
     private authService : AuthenticationService) { }
 
-  url = "http://localhost:8083";
+  url = "http://ec2-18-205-240-69.compute-1.amazonaws.com:8087";
 
   getTransfer():Observable<Transfer[]>{
 

@@ -26,7 +26,7 @@ import com.simplilearn.workshop.service.UserHistoryService;
 import com.simplilearn.workshop.service.UserService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class UserController {
 
 	
@@ -127,6 +127,8 @@ public class UserController {
 	@RequestMapping(value = "/updateUser" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.GET)
 	public UpdateResponseDetails updateUser(@RequestBody UpdateUserDetails details) {
 
+		System.out.println("--------> transfer request ----> "+details.getUsername());
+		
 		userService.updateUser(details.getUsername(), details.getEmail(), details.getAddress(), details.getNewpassword());
 		Users user = userService.findByUsername(details.getUsername());
 		UpdateResponseDetails responseDetails = new UpdateResponseDetails();

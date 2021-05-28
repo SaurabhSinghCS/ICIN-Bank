@@ -13,7 +13,7 @@ export class UsersServiceService {
 
   constructor(private http : HttpClient) { }
 
-  url = "http://localhost:8084";
+  url = "http://ec2-54-152-96-255.compute-1.amazonaws.com:8086";
   getUsers():Observable<User[]>{
     return this.http.get<User[]>(this.url+"/allUsers");
   }

@@ -1,7 +1,0 @@
-package com.simplilearn.workshop.service;
-
-public interface TransferRequestService {
-
-	public void insertRequest(String username,Long accno);
-	
-}

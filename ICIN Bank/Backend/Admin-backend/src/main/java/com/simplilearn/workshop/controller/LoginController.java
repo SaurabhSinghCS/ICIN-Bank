@@ -13,7 +13,7 @@ import com.simplilearn.workshop.model.Admin;
 import com.simplilearn.workshop.service.AdminService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class LoginController {
 
 	@Autowired

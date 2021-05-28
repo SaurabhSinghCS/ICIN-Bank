@@ -1,4 +1,54 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 155.835 s - in TestSuite
+Tests run: 10, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 150.206 s <<< FAILURE! - in TestSuite
+ChequeBookTest(com.icin.bank.UserPortalPositiveTests)  Time elapsed: 15.129 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//app-root//app-navbar/nav/ul[@class='navbar-nav']//a[@href='/cheque-book']"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HSC-J33TZF2', ip: '172.18.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAURSI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58743}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f9482dc1df54af92404b76628b55dc0b
+*** Element info: {Using=xpath, value=//app-root//app-navbar/nav/ul[@class='navbar-nav']//a[@href='/cheque-book']}
+	at com.icin.bank.UserPortalPositiveTests.ChequeBookTest(UserPortalPositiveTests.java:315)
+
+TransactionTest(com.icin.bank.UserPortalPositiveTests)  Time elapsed: 15.073 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//app-root//app-navbar/nav/ul[@class='navbar-nav']//a[@href='/transaction-history']"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HSC-J33TZF2', ip: '172.18.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAURSI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 602f144751b90b9ce7f39a6d600dadf6
+*** Element info: {Using=xpath, value=//app-root//app-navbar/nav/ul[@class='navbar-nav']//a[@href='/transaction-history']}
+	at com.icin.bank.UserPortalPositiveTests.TransactionTest(UserPortalPositiveTests.java:135)
+
+TransferTest(com.icin.bank.UserPortalPositiveTests)  Time elapsed: 14.756 s  <<< FAILURE!
+java.lang.AssertionError: Actual path url is not the same as expected expected [http://angular-front.s3-website-us-east-1.amazonaws.com/welcome] but found [http://angular-front.s3-website-us-east-1.amazonaws.com/]
+	at com.icin.bank.UserPortalPositiveTests.TransferTest(UserPortalPositiveTests.java:222)
+
+loginTest(com.icin.bank.UserPortalPositiveTests)  Time elapsed: 14.929 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//app-root//app-navbar/nav/ul[@class='navbar-nav']//a[@href='#']"}
+  (Session info: chrome=90.0.4430.212)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HSC-J33TZF2', ip: '172.18.208.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\SAURSI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 62dab9276f711c335e72b086ce94df18
+*** Element info: {Using=xpath, value=//app-root//app-navbar/nav/ul[@class='navbar-nav']//a[@href='#']}
+	at com.icin.bank.UserPortalPositiveTests.loginTest(UserPortalPositiveTests.java:64)
+
+incorrectPasswordTest(com.icin.bank.UserPortalNegativeTests)  Time elapsed: 7.784 s  <<< FAILURE!
+java.lang.AssertionError: 
+Actual error message does not contains expected. 
+Actual :
+Expected :Invalid Credentials expected [true] but found [false]
+	at com.icin.bank.UserPortalNegativeTests.incorrectPasswordTest(UserPortalNegativeTests.java:95)
+

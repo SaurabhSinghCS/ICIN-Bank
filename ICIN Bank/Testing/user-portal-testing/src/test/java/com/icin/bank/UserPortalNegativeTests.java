@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 
 public class UserPortalNegativeTests {
 
+	static String url = "http://angular-front.s3-website-us-east-1.amazonaws.com/";
+	
 	@Test
 	public void incorrectUsernameTest() {
 		
@@ -23,7 +25,6 @@ public class UserPortalNegativeTests {
 		//maximize browser window
 		driver.manage().window().maximize();
 		
-		String url = "http://localhost:4200/";
 		// open test page
 		driver.get(url);
 		System.out.println("page is opened");
@@ -70,7 +71,6 @@ public class UserPortalNegativeTests {
 		//maximize browser window
 		driver.manage().window().maximize();
 		
-		String url = "http://localhost:4200/";
 		// open test page
 		driver.get(url);
 		System.out.println("page is opened");
@@ -116,7 +116,6 @@ public class UserPortalNegativeTests {
 		//maximize browser window
 		driver.manage().window().maximize();
 		
-		String url = "http://localhost:4200/";
 		// open test page
 		driver.get(url);
 		System.out.println("page is opened");

@@ -18,7 +18,7 @@ import com.simplilearn.workshop.model.Chequebookhistory;
 import com.simplilearn.workshop.service.ChequeBookService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*",allowedHeaders = "*")
 public class RequestController {
 	
 	@Autowired
@@ -30,6 +30,8 @@ public class RequestController {
 		
 		System.out.println("Requested "+details.getUsername());
 		
+		System.out.println("--------> cheque book request ----> "+details.getUsername());
+		
 		return chequeBookService.insertChequeBook(details.getUsername(), details.getPages(), details.getDate());
 	}
 	
@@ -38,11 +40,14 @@ public class RequestController {
 		
 		System.out.println("AlreadyRequested "+details.getUsername());
 		
+		System.out.println("--------> cheque book already request ----> "+details.getUsername());
+		
 		return chequeBookService.findByUsername(details.getUsername());
 	}
 	
 	@RequestMapping(value = "/chequebookhistory" ,produces = { MediaType.APPLICATION_JSON_VALUE,"application/json" },method = RequestMethod.POST)
 	public List<Chequebookhistory> chequebookhistory(@RequestBody UserNameDetails details) {
+		
 		
 		
 		return chequeBookService.findAllByUsername(details.getUsername());

@@ -17,7 +17,7 @@ export class AuthenticationService {
 
   valid = false;
 
-  url = "http://localhost:8083";
+  url = "http://ec2-18-205-240-69.compute-1.amazonaws.com:8087";
 
   isPendingUser(username: String, password: String): Observable<PandingUser> {
     var data = {

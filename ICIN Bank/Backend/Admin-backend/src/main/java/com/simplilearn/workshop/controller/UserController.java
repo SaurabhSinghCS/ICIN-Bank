@@ -18,7 +18,7 @@ import com.simplilearn.workshop.service.PandingUserService;
 import com.simplilearn.workshop.service.UserService;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserController {
 
 	@Autowired

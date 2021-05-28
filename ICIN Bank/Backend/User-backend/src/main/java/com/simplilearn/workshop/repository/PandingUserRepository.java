@@ -19,7 +19,7 @@ public interface PandingUserRepository extends JpaRepository<PandingUser, Intege
 	
 	@Modifying
 	@Query(value = 
-		    "insert into PandingUsers (first_name, last_name, user_name, dob, address, email, password, kyc_id, kyc_type)"
+		    "insert into pandingusers (first_name, last_name, user_name, dob, address, email, password, kyc_id, kyc_type)"
 		    + " values (?1,?2,?3,?4,?5,?6,?7,?9,?8)",
 		    nativeQuery = true)
 	public void insertPandingUser(String firstname,String lastname,String username,Date dob

@@ -1,9 +1,0 @@
-package com.simplilearn.workshop.details;
-
-public class UpdateUserDetails {
-
-	username: sessionStorage.getItem("user"),
-    email: email,
-    address: address,
-    newpassword: newpassword
-}

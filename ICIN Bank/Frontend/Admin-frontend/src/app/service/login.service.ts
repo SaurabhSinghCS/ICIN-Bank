@@ -10,7 +10,7 @@ export class LoginService {
 
   valid = false;
 
-  url = "http://localhost:8084/validateLogin";
+  url = "http://ec2-54-152-96-255.compute-1.amazonaws.com:8086/validateLogin";
   isValidLogin(username : String,password:String){
     var data = {
       username : username,
